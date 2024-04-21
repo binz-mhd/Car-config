@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Configurator</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Car Configurator</h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Select Your Look</h2>
+            <p>Explore the world of color. Customize your dream car and experience the thrill of speed.</p>
+        </section>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="car-viewer">
+                    <canvas id="car-canvas" width="500" height="300"></canvas>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="options">
+                    <div class="color-options">
+                        <h2>Choose Color:</h2>
+                        <button onclick="changeColor('violet')">Violet</button>
+                        <button onclick="changeColor('white')">White</button>
+                        <button onclick="changeColor('blue')">Blue</button>
+                        <button onclick="changeColor('red')">Red</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
