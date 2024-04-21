@@ -36,7 +36,7 @@ camera.position.z = 5;
 function changeColor(color) {
     let hexColor;
     switch (color) {
-        case 'violet':
+        case 'purple':
             hexColor = 0x8B33CF;
             break;
         case 'white':
@@ -63,10 +63,6 @@ function changeColor(color) {
 function animate() {
     requestAnimationFrame(animate);
     controls.update();
-    renderer.render(scene, camera);
-
-    
+    renderer.render(scene, camera); 
 }
-
-
 animate();
